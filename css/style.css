@@ -1,0 +1,414 @@
+/* Estilos generales */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+html{
+  height: 100%;
+}
+
+/* Configuración Fondo*/
+
+body{
+  min-height: 100%;
+  background-image: url("../assets/images/fondo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+/*MOBILE*/
+
+.contenedor > * {
+  box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
+  border-radius: 3px;
+  padding: 5px;
+  text-align: center;
+}
+
+.contenedor {  
+  display:grid;
+  gap: 5px;
+  column-gap: 10px;
+  grid-template:
+  "header"  50px
+  "main" auto
+  "pie" 50px;
+}
+
+.header{
+  grid-area: header;
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main{
+  grid-area: main;
+  background-color: rgba(26, 25, 25, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+.pie{
+  grid-area: pie;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+    
+}  
+
+.navBar{
+  height: 100%;
+}
+
+.ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+a{
+  align-items: center;
+  text-decoration: none; 
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 10px;
+  color: aliceblue;
+}
+
+
+h1{
+  font-family: 'Roboto Slab';
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  text-align:start;
+  padding-left: 10px;
+}
+
+h2{
+  font-family: 'Courgette';
+  font-weight: 400;
+  color:white;
+  text-shadow: 1px 1px 2px black;
+  font-size:16px;
+  text-align: end;
+  padding-right: 10px;
+}
+p {
+  padding: 15px 5px 0 5px;
+  font-family: 'Roboto Slab', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 11px;
+
+}
+
+.iconos{
+  height: 22px;
+  width: 22px;
+}
+
+
+ /* About */
+
+.presentation_p{
+  font-size:9px ;
+}
+
+.datos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+.datos_li{
+  display: grid;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size:larger;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size:12px ;
+  text-align: left;
+  justify-content:left;
+  align-items: center;
+}
+
+/* Skills */
+
+.skills_card{
+  display:grid;
+  grid-template:
+  "presentation"
+  "skills_data" 
+  ;
+}
+
+.presentation{
+  grid-area: presentation;
+}
+
+.skills_data{
+  grid-area:skills_data ;
+}
+
+.skills_h2{
+  font-family: 'Roboto Slab';
+  font-size:small;
+  text-align: left;  
+}
+
+.nivel{
+  grid-area: nivel;
+  max-width: fit-content;
+  }
+
+/*MAQUETACION TABLET*/
+
+@media (min-width:600px){
+  .contenedor {  
+    display:grid;
+    gap: 3px;
+    column-gap: 10px;
+    grid-template:
+    "header main pie" auto / 70px auto 70px;
+  }
+  
+  .pie{
+    background-color: rgba(0, 0, 0, 0.150);
+      
+  }  
+
+  
+  .ul{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    align-items: center;
+    justify-content:space-between;  
+    
+  }
+  
+  h1{
+    font-size: auto;
+  }
+  
+  h2{
+    font-size:auto;
+    font-weight: 600;
+  
+  }
+  p {
+    font-size: auto;
+    font-style: oblique;
+    padding: 10px;
+  
+  }
+
+  .iconos{
+    height: 25px;
+    width: 25px;
+  }
+
+  a{
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 12px;
+    color: aliceblue;
+  }
+
+  /* About */
+ 
+  .presentation_p{
+    font-size:75% ;
+  }
+  
+  .data{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .datos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .datos_li{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size:larger;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size:90%;
+    text-align: left;
+  }
+}
+
+/* Skills */
+
+
+
+.skills_card{
+  display:grid;
+  grid-template:
+  "presentation"
+  "skills_data" 
+  ;
+}
+
+.presentation{
+  grid-area: presentation;
+}
+
+.listSkill{
+  display: flex;
+}
+
+.skills_h2{
+  font-family: 'Roboto Slab';
+  font-size:small;
+  text-align: left;
+  width: 120px;
+  align-items: left;
+  
+}
+
+.nivel{
+  grid-area: nivel;
+  }
+
+/*MAQUETACION DESKTOP*/
+
+@media (min-width:1024px){
+  .contenedor {  
+    display:grid;
+    gap: 3px;
+    column-gap: 10px;
+    grid-template:
+    "header main pie" auto / 70px auto 70px;
+  }
+  
+  .main{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .pie{
+    background-color: rgba(0, 0, 0, 0.150);
+      
+  }  
+  
+  .ul{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    align-items: center;
+    justify-content:space-around;  
+    
+  }
+  
+  h1{
+    font-size: 400%;
+  }
+  
+  h2{
+    font-size:250%;
+    font-weight: 600;
+  
+  }
+  p {
+    font-size: 120%;
+    font-style: oblique;
+    padding: 10px;
+  
+  }
+
+  .iconos{
+    height: 30px;
+    width: 30px;
+  }
+
+  a{
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 12px;
+    color: aliceblue;
+  }
+
+  /* About */
+ 
+  .presentation_p{
+    font-size:100% ;
+  }
+  
+  .data{
+    height: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .datos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .datos_li{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size:larger;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size:120%;
+    text-align: left;
+  }
+
+  /* Skills */
+
+
+
+.skills_card{
+  display:grid;
+  grid-template:
+  "presentation"
+  "skills_data" 
+  ;
+}
+
+.presentation{
+  grid-area: presentation;
+}
+
+.listSkill{
+  display: flex;
+}
+
+.skills_h2{
+  font-family: 'Roboto Slab';
+  font-size:large;
+  text-align: left;
+  width: 140px;
+  align-items: left;
+  
+}
+
+.nivel{
+  grid-area: nivel;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  }
+
+}
