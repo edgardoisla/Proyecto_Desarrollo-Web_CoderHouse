@@ -24,7 +24,6 @@ body{
 /*MOBILE*/
 
 .contenedor > * {
-  box-shadow: -1px 1px 7px 0px rgba(255, 255, 255, 0.75);
   border-radius: 3px;
   padding: 5px;
   text-align: center;
@@ -40,39 +39,13 @@ body{
   "pie" 50px;
 }
 
-.header{
-  grid-area: header;
-  background-color: rgb(32, 32, 32);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.main{
-  grid-area: main;
-  background-color: rgba(26, 25, 25, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  }
-
-.pie{
-  grid-area: pie;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  justify-content:space-around;
-    
-}  
-
-.navBar{
-  height: 100%;
-}
 
 .ul{
   display: flex;
   justify-content: space-around;
   list-style: none;
+  margin-bottom: 0px;
 }
 
 a{
@@ -89,19 +62,21 @@ a{
 
 h1{
   font-family: 'Roboto Slab';
-  font-size: 30px;
+  font-size: 2rem;
+  font-weight: bold;
   color: white;
   text-shadow: 1px 1px 2px black;
   text-align:start;
   padding-left: 10px;
+  margin: 3px;
 }
 
-h2{
+.fsd{
   font-family: 'Courgette';
   font-weight: 400;
   color:white;
   text-shadow: 1px 1px 2px black;
-  font-size:16px;
+  font-size:1.2rem;
   text-align: end;
   padding-right: 10px;
 }
@@ -110,15 +85,26 @@ p {
   font-family: 'Roboto Slab', sans-serif;
   color: white;
   text-shadow: 1px 1px 2px black;
-  font-size: 11px;
+  font-size: 0.6rem;
 
 }
 
+.guion{
+  padding:.1rem;
+  color: aliceblue;
+  margin: 2px;
+}
 .iconos{
   height: 22px;
   width: 22px;
 }
 
+.subr{
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  opacity: 90%;
+
+}
 
  /* About */
 
@@ -204,20 +190,15 @@ p {
 
 /*MAQUETACION TABLET*/
 
-@media (min-width:600px){
+@media (min-width:768px){
   .contenedor {  
     display:grid;
     gap: 3px;
     column-gap: 10px;
     grid-template:
-    "header main pie" auto / 70px auto 70px;
+    "header main pie" auto / 4em auto 4em;
   }
   
-  .pie{
-    background-color: rgba(0, 0, 0, 0.150);
-      
-  }  
-
   
   .ul{
     display: flex;
@@ -229,16 +210,16 @@ p {
   }
   
   h1{
-    font-size: auto;
+    font-size: 3rem;
   }
   
-  h2{
-    font-size:auto;
+  .fsd{
+    font-size:1.6rem;
     font-weight: 600;
   
   }
   p {
-    font-size: auto;
+    font-size: 0.8rem;
     font-style: oblique;
     padding: 10px;
   
@@ -330,22 +311,7 @@ p {
 /*MAQUETACION DESKTOP*/
 
 @media (min-width:1024px){
-  .contenedor {  
-    display:grid;
-    gap: 3px;
-    column-gap: 10px;
-    grid-template:
-    "header main pie" auto / 70px auto 70px;
-  }
-  
-  .main{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .pie{
-    background-color: rgba(0, 0, 0, 0.150);
-      
-  }  
+ 
   
   .ul{
     display: flex;
@@ -357,35 +323,22 @@ p {
   }
   
   h1{
-    font-size: 400%;
+    font-size: 4rem;
   }
   
-  h2{
-    font-size:250%;
-    font-weight: 600;
+  .fsd{
+    font-size:2rem;
+    font-weight: 400;
   
   }
   p {
-    font-size: 120%;
+    font-size: 1rem;
     font-style: oblique;
     padding: 10px;
   
   }
 
-  .iconos{
-    height: 30px;
-    width: 30px;
-  }
-
-  a{
-    display: flex;
-    flex-direction: column;
-    width: 30px;
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 12px;
-    color: aliceblue;
-  }
-
+  
   /* About */
  
   .presentation_p{
