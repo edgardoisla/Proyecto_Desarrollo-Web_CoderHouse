@@ -43,10 +43,6 @@ body{
   "pie" 50px;
 }
 
-.nivel{
-  flex-basis: 40%;
-}
-
 .ul{
   display: flex;
   justify-content: space-around;
@@ -104,28 +100,12 @@ p {
 
 }
 
-.guion{
-  padding:.1rem;
-  color: aliceblue;
-  margin: 2px;
-}
 .iconos{
   height: 22px;
   width: 22px;
 }
 
-.subr{
-  margin: 0px;
-  color: rgb(255, 255, 255);
-  opacity: 90%;
-
-}
-
  /* About */
-
-.presentation_p{
-  font-size:9px ;
-}
 
 .datos{
   display: flex;
@@ -159,6 +139,7 @@ td{
   width:100%;
   height:100%;
   }
+  
 #demo{
   inline-size: 95%;
   margin:auto
@@ -223,18 +204,7 @@ td{
 
   /* About */
  
-  .presentation_p{
-    font-size:75%;
-    margin: 2px;
-    padding: 2px;
-  }
-  
-  .data{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-  .datos{
+ .datos{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -250,16 +220,6 @@ td{
 }
 
 /* Skills */
-
-
-
-.skills_card{
-  display:grid;
-  grid-template:
-  "presentation"
-  "skills_data" 
-  ;
-}
 
 .presentation{
   grid-area: presentation;
@@ -277,13 +237,6 @@ td{
   align-items: left;
   
 }
-
-.nivel{
-  grid-area: nivel;
-  }
-
-  /* Projects*/
-
 
 /*MAQUETACION DESKTOP*/
 
@@ -309,6 +262,7 @@ td{
     font-weight: 400;
   
   }
+
   p {
     font-size: 1rem;
     font-style: oblique;
@@ -319,11 +273,7 @@ td{
   
   /* About */
  
-  .presentation_p{
-    font-size:100% ;
-  }
-  
-  .data{
+ .data{
     height: 70%;
     display: flex;
     justify-content: start;
@@ -335,49 +285,12 @@ td{
     align-items: flex-start;
     justify-content: space-between;
   }
-  .datos_li{
-    font-family: 'Roboto Slab', sans-serif;
-    font-size:larger;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    font-size:120%;
-    text-align: left;
-  }
-
-  /* Skills */
-
-
-
-.skills_card{
-  display:grid;
-  grid-template:
-  "presentation"
-  "skills_data" 
-  ;
-}
-
-.presentation{
-  grid-area: presentation;
-}
-
-.listSkill{
-  display: flex;
-}
-
-.skills_h2{
-  font-family: 'Roboto Slab';
-  font-size:large;
+.datos_li{
+  font-family: 'Roboto Slab', sans-serif;
+  font-size:larger;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size:120%;
   text-align: left;
-  width: 140px;
-  align-items: left;
-  
-}
-
-.nivel{
-  grid-area: nivel;
-  height: 30px;
-  display: flex;
-  justify-content: center;
   }
-
 }
