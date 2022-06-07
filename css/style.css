@@ -43,6 +43,9 @@ body{
   "pie" 50px;
 }
 
+.nivel{
+  flex-basis: 40%;
+}
 
 .ul{
   display: flex;
@@ -145,32 +148,9 @@ p {
 
 /* Skills */
 
-.skills_card{
-  display:grid;
-  grid-template:
-  "presentation"
-  "skills_data" 
-  ;
+td{
+  text-align:left;
 }
-
-.presentation{
-  grid-area: presentation;
-}
-
-.skills_data{
-  grid-area:skills_data ;
-}
-
-.skills_h2{
-  font-family: 'Roboto Slab';
-  font-size:small;
-  text-align: left;  
-}
-
-.nivel{
-  grid-area: nivel;
-  max-width: fit-content;
-  }
 
 /* Projects */
 
@@ -190,7 +170,7 @@ p {
 }
 
 
-/*MAQUETACION TABLET*/
+/* MAQUETACION TABLET */
 
 @media (min-width:768px){
   .contenedor {  
