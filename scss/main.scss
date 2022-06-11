@@ -1,0 +1,32 @@
+@import "./components/extends";
+@import "./components/maps";
+@import "./components/mixins";
+
+body{
+    min-height: map-get($body, b-height);
+    background-image: map-get($body , b-bgimg);
+    background-attachment: map-get($body , b-bgatt);
+    background-position: map-get($body , b-bgpos);
+    background-repeat: map-get($body , b-bgrep);
+    background-size: map-get($body , b-bgsz);
+}
+
+.iconos{
+    @include ico(25)
+}
+
+a{
+    align-items: center;
+    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    font-size: 10px;
+    @extend %font_roboto;
+}
+
+h1, p, td, .datos_li{
+    @extend %font_roboto;
+}
+
+@import "./components/restante";
