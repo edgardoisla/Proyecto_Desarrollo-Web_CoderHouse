@@ -108,13 +108,8 @@ svg{
     }
     
   #demo{
-    inline-size: 95%;
-    margin:auto
-  ;
-  }
-  
-  #demo:hover{
-    transform: scale(1.05);
+    margin:auto;
+    max-width: 70%;
   }
   
   

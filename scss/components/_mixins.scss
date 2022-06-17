@@ -1,4 +1,4 @@
 @mixin ico ($tam){
-    height: $tam + px;
-    width: $tam + px;
+    height: $tam + rem;
+    width: $tam + rem;
 }

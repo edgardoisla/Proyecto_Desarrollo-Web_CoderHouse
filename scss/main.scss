@@ -4,17 +4,23 @@
 
 body{
     min-height: map-get($body, b-height);
-    background-image: map-get($body , b-bgimg);
+    background: map-get($body , b-bgimg);
     background-attachment: map-get($body , b-bgatt);
     background-position: map-get($body , b-bgpos);
     background-repeat: map-get($body , b-bgrep);
     background-size: map-get($body , b-bgsz);
+    background-blend-mode:darken;
+    
 }
 
 .iconos{
-    @include ico(20);
-    filter: invert(100%)       
-    
+    @include ico(1.2);
+    filter: invert(100%);
+           
+}
+
+.icoFooter{
+    @include ico(2);
 }
 
 a{
@@ -25,6 +31,9 @@ a{
     width: 30px;
     font-size: 10px;
     @extend %font_roboto;
+        &:hover{
+            color: aliceblue;
+        }
 }
 
 h1, p, td, .datos_li{
