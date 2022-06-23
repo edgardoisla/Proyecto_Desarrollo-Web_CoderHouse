@@ -1,8 +1,7 @@
-h1, p, td, .datos_li, a {
-  font-family: "Roboto Slab", sans-serif;
+a, h1, p, td, .datos_li {
+  font-family: 'Roboto Slab', sans-serif;
   color: aliceblue;
-  text-shadow: 2px 2px 2px black;
-}
+  text-shadow: 2px 2px 2px black; }
 
 body {
   min-height: 100%;
@@ -11,19 +10,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: darken;
-}
+  background-blend-mode: darken; }
 
 .iconos {
   height: 1.2rem;
   width: 1.2rem;
-  filter: invert(100%);
-}
+  filter: invert(100%); }
 
 .icoFooter {
   height: 2rem;
-  width: 2rem;
-}
+  width: 2rem; }
 
 a {
   align-items: center;
@@ -31,119 +27,107 @@ a {
   display: flex;
   flex-direction: column;
   width: 30px;
-  font-size: 10px;
-}
-a:hover {
-  color: aliceblue;
-}
+  font-size: 10px; }
+  a:hover {
+    color: aliceblue; }
 
 /* Estilos generales */
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 html {
-  height: 100%;
-}
+  height: 100%; }
 
 hr {
-  margin: 0;
-}
+  margin: 0; }
 
 svg {
-  fill: aliceblue;
-}
+  fill: aliceblue; }
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px; }
 
 /*MOBILE*/
 .contenedor > * {
   border-radius: 3px;
   padding: 5px;
-  text-align: center;
-}
+  text-align: center; }
 
 .contenedor {
   display: grid;
   gap: 5px;
   column-gap: 10px;
-  grid-template: "header" 50px "main" auto "pie" 50px;
-}
+  grid-template: "header"  50px "main" auto "pie" 50px; }
 
 .ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 .foot {
   margin-bottom: 0px;
-  align-items: center;
-}
+  align-items: center; }
 
 .navbar {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-align: start;
   padding-left: 10px;
-  margin: 3px;
-}
+  margin: 3px; }
+
+h3 {
+  color: white;
+  text-shadow: 1px 1px 2px black; }
 
 .fsd {
-  font-family: "Courgette";
-  font-weight: 400;
+  font-family: 'Courgette';
   color: white;
   text-shadow: 1px 1px 2px black;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   text-align: end;
-  padding-right: 10px;
-}
+  padding-right: 10px; }
 
 p {
   padding: 15px 5px 0 5px;
-  font-size: 0.6rem;
-}
+  font-size: 0.7rem;
+  text-shadow: 1px 1px 1px black; }
 
 /* About */
 .datos {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding-left: 20px;
-  padding-top: 15px;
-}
+  align-items: flex-start;
+  padding-top: 2rem; }
 
 .datos_li {
-  display: grid;
-  font-size: larger;
-  font-size: 12px;
-  text-align: left;
-  justify-content: left;
-  align-items: center;
-}
+  font-size: .7rem;
+  text-shadow: 1px 1px 1px black; }
 
 /* Skills */
 td {
-  text-align: left;
-}
+  font-size: 0.2rem;
+  text-align: left; }
+
+.star {
+  width: 0.5rem;
+  height: 0.5rem; }
 
 /* Projects */
 .proyImg {
   object-fit: cover;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 #demo {
-  margin: auto;
-  max-width: 70%;
-}
+  margin: auto; }
 
 /* MAQUETACION TABLET */
 @media (min-width: 768px) {
@@ -151,47 +135,35 @@ td {
     display: grid;
     gap: 3px;
     column-gap: 10px;
-    grid-template: "header main pie" auto/4em auto 4em;
-  }
+    grid-template: "header main pie" auto / 5em auto 5em; }
   .ul {
     display: flex;
     flex-direction: column;
     height: 100%;
     align-items: center;
-    justify-content: space-around;
-  }
+    justify-content: space-around; }
   h1 {
-    font-size: 3rem;
-  }
+    font-size: 2rem; }
   .fsd {
-    font-size: 1.6rem;
-    font-weight: 600;
-  }
+    font-size: 1.6rem; }
   p {
     font-size: 0.8rem;
     font-style: oblique;
-    padding: 10px;
-  }
+    padding: 10px; }
   /* About */
   .datos {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    align-items: flex-start; }
   .datos_li {
-    font-size: larger;
-    font-size: 90%;
-    text-align: left;
-  }
-}
-/* Skills */
-.presentation {
-  grid-area: presentation;
-}
+    font-size: 1rem; } }
 
-.listSkill {
-  display: flex;
-}
+/* Skills */
+td {
+  font-size: .7rem;
+  text-align: left; }
+
+.star {
+  width: .7rem;
+  height: .7rem; }
 
 /*MAQUETACION DESKTOP*/
 @media (min-width: 1024px) {
@@ -201,38 +173,25 @@ td {
     height: 100%;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 0;
-  }
+    margin-bottom: 0; }
   h1 {
-    font-size: 4rem;
-  }
+    font-size: 3rem; }
   .fsd {
-    font-size: 2rem;
-    font-weight: 400;
-  }
+    font-size: 1.6rem;
+    font-weight: 400; }
   p {
     font-size: 1rem;
     font-style: oblique;
-    padding: 10px;
-  }
+    padding: 10px; }
   /* About */
-  .data {
-    height: 70%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
   .datos {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
+    align-items: flex-start; }
   .datos_li {
-    font-size: larger;
-    font-size: 120%;
-    text-align: left;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+    font-size: 1.2rem; }
+  /* Skills */
+  td {
+    font-size: 1rem;
+    text-align: left; }
+  .star {
+    width: 1rem;
+    height: 1rem; } }

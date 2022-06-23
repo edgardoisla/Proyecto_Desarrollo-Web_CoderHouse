@@ -1,39 +1,45 @@
 /* Estilos generales */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding:0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
   
-  html{
-    height: 100%;
-  }
-  
-  hr{
-    margin:0;
-  }
+html{
+  height: 100%;
+}
+
+hr{
+  margin:0;
+}
   
 svg{
   fill: aliceblue;
 }
-  /*MOBILE*/
+
+.carousel-caption{
+  background-color: rgba(255,255,255,.4);
+  border-radius: 20px;
+}
+
+/*MOBILE*/
   
-  .contenedor > * {
-    border-radius: 3px;
-    padding: 5px;
-    text-align: center;
-  }
+.contenedor > * {
+  border-radius: 3px;
+  padding: 5px;
+  text-align: center;
+}
   
-  .contenedor {  
-    display:grid;
-    gap: 5px;
-    column-gap: 10px;
-    grid-template:
-    "header"  50px
-    "main" auto
-    "pie" 50px;
-  }
+.contenedor {  
+  display:grid;
+  gap: 5px;
+  column-gap: 10px;
+  grid-template:
+  "header"  50px
+  "main" auto
+  "pie" 50px;
+}
   
   .ul{
     display: flex;
@@ -54,25 +60,30 @@ svg{
   }
   
   h1{
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     text-align:start;
     padding-left: 10px;
     margin: 3px;
   }
+  h3{
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
   
   .fsd{
     font-family: 'Courgette';
-    font-weight: 400;
     color:white;
     text-shadow: 1px 1px 2px black;
-    font-size:1.2rem;
+    font-size:0.8rem;
     text-align: end;
     padding-right: 10px;
   }
   p {
     padding: 15px 5px 0 5px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
   }
   
    /* About */
@@ -80,25 +91,27 @@ svg{
   .datos{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-left: 20px;
-    padding-top: 15px;
+    align-items: flex-start;
+    padding-top: 2rem;
   }
+
   .datos_li{
-    display: grid;
-    font-size:larger;
-    font-size:12px ;
-    text-align: left;
-    justify-content:left;
-    align-items: center;
+    font-size:.7rem;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
   }
   
   /* Skills */
   
   td{
+    font-size: 0.2rem;
     text-align:left;
   }
-  
+    
+  .star{
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
   /* Projects */
   
   .proyImg{
@@ -109,7 +122,6 @@ svg{
     
   #demo{
     margin:auto;
-    max-width: 70%;
   }
   
   
@@ -121,7 +133,7 @@ svg{
       gap: 3px;
       column-gap: 10px;
       grid-template:
-      "header main pie" auto / 4em auto 4em;
+      "header main pie" auto / 5em auto 5em;
     }
     
     
@@ -135,12 +147,11 @@ svg{
     }
     
     h1{
-      font-size: 3rem;
+      font-size: 2rem;
     }
     
     .fsd{
       font-size:1.6rem;
-      font-weight: 600;
     
     }
     p {
@@ -154,27 +165,26 @@ svg{
     /* About */
    
    .datos{
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
     }
+
     .datos_li{
-      font-size:larger;
-      font-size:90%;
-      text-align: left;
+      font-size:1rem;
     }
+  
   }
   
   /* Skills */
   
-  .presentation{
-    grid-area: presentation;
+   td{
+    font-size: .7rem;
+    text-align:left;
   }
-  
-  .listSkill{
-    display: flex;
+    
+  .star{
+    width: .7rem;
+    height: .7rem;
   }
-  
  
   /*MAQUETACION DESKTOP*/
   
@@ -192,11 +202,11 @@ svg{
     }
     
     h1{
-      font-size: 4rem;
+      font-size: 3rem;
     }
     
     .fsd{
-      font-size:2rem;
+      font-size:1.6rem;
       font-weight: 400;
     
     }
@@ -211,21 +221,21 @@ svg{
     
     /* About */
    
-   .data{
-      height: 70%;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-    }
     .datos{
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
-      justify-content: space-between;
     }
-  .datos_li{
-    font-size:larger;
-    font-size:120%;
-    text-align: left;
+    .datos_li{
+      font-size:1.2rem;
     }
+  /* Skills */
+  
+  td{
+    font-size: 1rem;
+    text-align:left;
   }
+    
+  .star{
+    width: 1rem;
+    height: 1rem;
+  }
+}
