@@ -21,6 +21,7 @@ body{
 
 .icoFooter{
     @include ico(2);
+    filter:invert(60%);
 }
 
 a{
